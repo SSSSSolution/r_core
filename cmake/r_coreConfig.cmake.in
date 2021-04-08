@@ -1,0 +1,17 @@
+include(CMakeFindDependencyMacro)
+
+
+# capturing values from configure (optional)
+set(my-config-var @my-config-var@)
+
+
+
+# same syntax as find_package
+#find_dependency(my_lib REQUIRED)
+
+
+# Any extra setup
+
+
+# Add the targets file
+include("${CMAKE_CURRENT_LIST_DIR}/r_coreTargets.cmake")
